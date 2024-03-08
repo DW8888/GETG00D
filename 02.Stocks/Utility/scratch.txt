@@ -1,0 +1,18 @@
+print_r($rows);
+print_r($rows[0]["id"]);
+echo " ";
+print_r($rows[0]["company_name"]);
+$sqlStatement = "SELECT id, company_name FROM company_name order by 2 desc";
+$sql=new DBUtility();
+$data= $sql->execute($sqlStatement);
+print_r($data);
+echo'//////////////////////////////////////////////////';
+echo'--------------------------------------------------';
+$sqlStatement = "SELECT id, company_name FROM company_name order by 2 asc";
+$data= $sql->execute($sqlStatement);
+print_r($data);
+echo'//////////////////////////////////////////////////';
+echo'--------------------------------------------------';
+$sqlStatement = "SELECT id, company_name FROM company_name order by 2 asc";
+$data= $sql->execute($sqlStatement);
+print_r($data);
