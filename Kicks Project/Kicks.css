@@ -1,0 +1,148 @@
+ h1{
+    font-size: 100pt;
+    text-align: center;
+    text-transform: capitalize;
+
+ }
+ h2{
+    font-size: 60pt;
+    text-align: center;
+ }
+ h3{
+  
+ }
+ body{
+    background-color: black;
+    color: white;
+    text-decoration-style: solid;
+    font-size: large;
+    font-family: calibri;
+    
+ }
+ image{
+    width: 200px;
+    height: 200px;
+ }
+ th{
+    font-size: 55pt;
+    text-align: center;
+ }
+ .bg-img {
+    /* The image used */
+    background-image: url("backgroundScript.js");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+/* Add styles to the form container */
+.container {
+    position: fixed;
+    
+    left: 0%;
+    top: 1%;
+    margin: 0;
+    width: 10%;
+    height:100%;
+    padding: 20px;
+    background-color: black;
+    flex-flow: column;
+  }
+  
+  /* Full-width input fields */
+  input[type=text],input[type=email] {
+    width: 100%;
+   padding: 10px,10;
+    margin: 5px 0 22px 0;
+    border:none;
+    background: white;
+    color: black;
+    font-size: 1em;
+  }
+  input[type=radio]{
+    background-color: black;
+    font-size: 1em;
+  }
+  button[type=submit], button[type=file]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    font-size: 1em;
+  
+  }
+  input[type=file]{
+    width: 100%;
+    padding: 5px, 5px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: black;
+    font-size: 1em;
+  }
+
+  
+ 
+  
+  /* style for navbar */
+  
+.topnav {
+    overflow: hidden;
+    background-color:black;
+    text-align: center;
+  }
+  
+  .topnav a {
+    float:none;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    text-decoration: none;
+    font-size: xx-large;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: red;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 80%) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 80%) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  

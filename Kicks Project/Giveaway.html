@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D's Faveorite Kickz</title>
+    <link rel="stylesheet" href="Kicks.css">
+    <div class="topnav" id="myTopnav" >
+        <a href="D'sKicksHome.html">Home</a>
+      <a href="Jordans.html"> Jordans</a>
+      <a href="nikes.html">Nikes</a>
+      <a href="others.html"> Others</a>
+      <a href="Giveaway.html"> Coolness</a>
+        <i class="fa fa-bars"></i>
+      </a>
+     
+    </div>
+  </head>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+        background-size: 90% auto;
+      background-position: right  center;
+      
+    }
+  </style>
+  <body id="myBody">
+    
+    
+    <div class="bg-img">
+        <script src="backgroundScript.js"></script>
+        
+        <form action="Success.html" class="container" onsubmit="validateForm">
+            <h2>Submit a photo of your favorite kicks for a chance at a free pair of Kicks</h2>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required ><br>
+          
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+          
+            <label for="brand">Favorite brand:</label><br>
+            <input type="radio" id="nike" name="brand" value="nike" required >
+            <label for="nike">Nike</label><br>
+          
+            <input type="radio" id="adidas" name="brand" value="adidas">
+            <label for="adidas">Adidas</label><br>
+          
+            <input type="radio" id="puma" name="brand" value="puma">
+            <label for="puma">Puma</label><br>
+          
+            <input type="radio" id="underarmour" name="brand" value="under armour">
+            <label for="underarmour">Under Armour</label><br>
+          
+            <input type="radio" id="reebok" name="brand" value="reebok">
+            <label for="reebok">Reebok</label><br>
+          
+            <input type="radio" id="yeezys" name="brand" value="yeezys">
+            <label for="yeezys">Yeezys</label><br>
+          
+            <input type="radio" id="other" name="brand" value="other">
+            <label for="other">Other</label><br>
+          
+            <input type="file" id="myFile" name="filename" required><br><br>
+          
+            <button type="submit" class="btn">Submit</button>  
+          </form>
+          
+          <script>
+            function validateForm() {
+              var email = document.getElementById("email").value;
+              var name = document.getElementById("name").value;
+          
+              if (email === "") {
+                alert("Email field is required");
+                return false;
+              }
+          
+              if (name === "") {
+                alert("Name field is required");
+                return false;
+              }
+          
+              // Check if at least one radio button is selected
+              var radioButtons = document.getElementsByName("brand");
+              var checked = false;
+              for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                  checked = true;
+                  break;
+                }
+              }
+          
+              if (!checked) {
+                alert("Please select a favorite brand");
+                return false;
+              }
+          
+              return true;
+            }
+          </script>
+                     
+            </form>
+        
+      </div>
+  </body>
+</html>
